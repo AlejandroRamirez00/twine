@@ -3,12 +3,12 @@ body, tw-story
     background-color: #172774; 
     color: #EEEEEE;
     font-family: 'PT Sans Caption', sans-serif;
-    font-size: 1.1em;
+    font-size: 18px;
 }
 
 tw-passage 
 {
-    max-width: 55em;
+    max-width: 50%;
     margin: 0 auto 0 auto;
 }
 
