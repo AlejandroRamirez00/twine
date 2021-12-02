@@ -47,9 +47,17 @@ ul
 {
     list-style: none;
     text-align: center;
+    padding-left: 0px;
 }
 
 li
 {
     display: block
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
