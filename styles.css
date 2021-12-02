@@ -32,3 +32,8 @@ tw-link, .enchantment-link
     text-align: center;
     font-size: 21px;
 }
+
+a:link
+{
+    color: #2E87F9;
+}
