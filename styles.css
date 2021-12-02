@@ -37,3 +37,13 @@ a:link
 {
     color: #2E87F9;
 }
+
+ul
+{
+    list-style: none;
+}
+
+li
+{
+    display: block
+}
