@@ -27,7 +27,8 @@ tw-link, .enchantment-link
     width: 50%;
 }
 
-a
+.center
 {
     text-align: center;
+    font-size: 21px;
 }
