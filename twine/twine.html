@@ -113,7 +113,7 @@ I get ready and head downstairs. My stomach is rumbling...
 [[I should still eat something quick-&gt;breakfast]]
 ]</tw-passagedata><tw-passagedata pid="2" name="park" tags="" position="1498,196" size="100,100">(if: $awards is 0)[The park is bustling with activity as the organizers work to set everything up for the fair. I see game booths being set up, the rides ready to be enjoyed, and the pie baking contest tent. Yum! 
 
-Admist all of the excitement I see the mayor, who looks worried. I go up to him to ask him whats wrong. He tells me that he&#39;s lost the community service awards he was going to give out tonight. The worst part is that he doesn&#39;t have time to find them be he is setting up for the fair.
+Admist all of the excitement I see the mayor, who looks worried. I go up to him to ask him whats wrong. He tells me that he&#39;s lost the community service awards he was going to give out tonight. The worst part is that he doesn&#39;t have time to find them because he is setting up for the fair.
 
 I offer to retrace his steps from his day so far so that I can help out. Hopefully I can find them in time for the ceremony.
 
@@ -123,8 +123,7 @@ I offer to retrace his steps from his day so far so that I can help out. Hopeful
 (if: $storeVisited is false)[[[I need to buy some stuff at the store-&gt;store]]]
 (if: $beachVisited is false)[[[Could it be at the beach?-&gt;beach]]]
 (if: $cafeVisited is false)[[[The mayor loves the cafe, maybe its there?-&gt;cafe]]]
-(if: $firehouseVisited is false)[[[The mayor was at the firehouse earlier, maybe he left one there?-&gt;firehouse]]]
-]
+(if: $firehouseVisited is false)[[[The mayor was at the firehouse earlier, maybe he left one there?-&gt;firehouse]]]]
 
 (elseif: $awards &lt; 4)[Oh no! We don&#39;t have all the awards for tonight!
 
@@ -196,43 +195,38 @@ The students are all still in class, but I go to the office and ask the principa
 The auditorium is a lot quieter than it would&#39;ve been during the fair kickoff. After looking all over the stage and seats, I still can&#39;t find an award. So, I go to the lost and found with little hope of finding it there. But, sitting on top of the jackets and shoes is one of the awards! (set: $awards to it + 1) (set: $schoolVisited to true)
 
 (if: $awards &gt;= 1)[I have found $awards awards] &lt;/span&gt;
-
-[[I should go back to the park-&gt;park]]</tw-passagedata><tw-passagedata pid="6" name="cityhall" tags="hall" position="1363,399" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;The mayors office is in city hall, so maybe he left an award there before leaving for the day. 
+&lt;span style=&quot;background-color:white&quot;&gt;[[I should go back to the park-&gt;park]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="6" name="cityhall" tags="hall" position="1363,399" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;The mayors office is in city hall, so maybe he left an award there before leaving for the day. 
 
 I walk into the building, and mention to his administrative assistant that I&#39;m looking for the community service awards. She hasn&#39;t seen them today, but she lets me into the mayor&#39;s office to take a look. 
 
 The office is a mess of paperwork and photos from pervious village events, but amongst the chaos, I find one of the awards! (set: $awards to it + 1) (set: $cityhallVisited to true)
 
 (if: $awards &gt;= 1)[I have found $awards awards]&lt;/span&gt;
-
-[[I should go back to the park-&gt;park]]</tw-passagedata><tw-passagedata pid="7" name="cafe" tags="cafe" position="1526,398" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;The mayor is a regular at the local cafe. He goes there every morning to get his coffee, and to get coffee for his son on the weekends. The mayor is known to lose track of time at the cafe, getting engrossed in conversation with other regulars. It&#39;s likely that he lost track of an award while in conversation.
+&lt;span style=&quot;background-color:white&quot;&gt;[[I should go back to the park-&gt;park]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="7" name="cafe" tags="cafe" position="1526,398" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;The mayor is a regular at the local cafe. He goes there every morning to get his coffee, and to get coffee for his son on the weekends. The mayor is known to lose track of time at the cafe, getting engrossed in conversation with other regulars. It&#39;s likely that he lost track of an award while in conversation.
 
 I enter the cafe and the smells of freshly brewed coffee greets me. I grab a vanilla latte, it&#39;s been a long day after all. While talking to the barista, she mentions how excited she is for the fair tonight. I ask her whether the mayor left any awards behind after getting his coffee. She says that she saw him with all 4 awards this morning when he came in, but he also left with all 4 of them. I guess the awards aren&#39;t here. (set: $cafeVisited to true)
 
 (if: $awards &gt;= 1)[I have found $awards awards]&lt;/span&gt;
-
-[[I should head back to the park-&gt;park]]</tw-passagedata><tw-passagedata pid="8" name="leaving" tags="outside" position="1001,103" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;(if: $weather is 1)[The sky is grey above the village. Hopefully it won&#39;t rain (set: $rain to (random: 0, 1))]
+&lt;span style=&quot;background-color:white&quot;&gt;[[I should head back to the park-&gt;park]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="8" name="leaving" tags="outside" position="1001,103" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;(if: $weather is 1)[The sky is grey above the village. Hopefully it won&#39;t rain (set: $rain to (random: 0, 1))]
 (elseif: $weather is 2)[The sun shines, perfect weather for a fair!]
 (elseif: $weather is 3)[A frost covers the ground. Good thing the fair will have a nice bonfire!]
 
 Now that I&#39;ve had a great breakfast, I should get going. There&#39;s so much to do to get ready for the fair.&lt;/span&gt;
 
-[[I should make my way to the park to help the organizers set up. -&gt;park]]
-[[I still have to buy a few things to get ready, I should go to the store. -&gt;store]]</tw-passagedata><tw-passagedata pid="9" name="beach" tags="beach" position="1702,400" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;The mayor loves walking along the beach throughout the day. His office is right across from it. So, he can often be found relaxing, and even working there. Maybe he brought an award to the beach and left it there.
+&lt;span style=&quot;background-color:white&quot;&gt;[[I should make my way to the park to help the organizers set up. -&gt;park]]
+[[I still have to buy a few things to get ready, I should go to the store. -&gt;store]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="beach" tags="beach" position="1702,400" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;The mayor loves walking along the beach throughout the day. His office is right across from it. So, he can often be found relaxing, and even working there. Maybe he brought an award to the beach and left it there.
 
 I walk along the beach and see crashing waves, and seagulls overhead. At the mayor&#39;s favorite bench I see an award partially covered in sand.
 
 I pick it up and dust it off so that it looks shiny and new again. (set: $awards to it + 1) (set: $beachVisited to true)
 
 (if: $awards &gt;= 1)[I have found $awards awards]&lt;/span&gt;
-
-[[Its so nice, but I should go back to the park-&gt;park]]</tw-passagedata><tw-passagedata pid="10" name="library" tags="library" position="1185,397" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;The mayor&#39;s son works at the library on the weekends, and everyone knows that the mayor loves to visit his son and bring him coffee at work. So maybe he left the award here during his visit?
+&lt;span style=&quot;background-color:white&quot;&gt;[[Its so nice, but I should go back to the park-&gt;park]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="10" name="library" tags="library" position="1185,397" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;The mayor&#39;s son works at the library on the weekends, and everyone knows that the mayor loves to visit his son and bring him coffee at work. So maybe he left the award here during his visit?
 
 I enter the library and see the mayor&#39;s son at the circulation desk. I ask him if his dad left an award here while he was visiting earlier. He says he did! He was going to bring it to the park after his shift, but having me do it would save him so much time. (set: $awards to it + 1) (set: $libraryVisited to true)
 
 (if: $awards &gt;= 1)[I have found $awards awards]&lt;/span&gt;
-
-[[I should go back to the park-&gt;park]]</tw-passagedata><tw-passagedata pid="11" name="fair" tags="fair" position="2004,200" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;At the fair, I see my mom competing at the pie baking tent, the mayor&#39;s son playing at one of the game booths, the mayor&#39;s adminstrative assistant enjoying a candied apple, the fire chief trying to get a picture with all the firefighters, the principal with on line to ride one of the fair rides, and the barista from the cafe lawn bowling with some friends and eating some $food.
+&lt;span style=&quot;background-color:white&quot;&gt;[[I should go back to the park-&gt;park]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="11" name="fair" tags="fair" position="2004,200" size="100,100">&lt;span style=&quot;color:black; background-color:white&quot;&gt;At the fair, I see my mom competing at the pie baking tent, the mayor&#39;s son playing at one of the game booths, the mayor&#39;s adminstrative assistant enjoying a candied apple, the fire chief trying to get a picture with all the firefighters, the principal with on line to ride one of the fair rides, and the barista from the cafe lawn bowling with some friends and eating some $food.
 
 The mayor calls over for a microphone, asking for everyone&#39;s attention. Its time to give out the community service awards! 
 
@@ -253,14 +247,14 @@ She got some fresh eggs from the farmers market this morning, I think I&#39;ll h
 
 While I eat, my mom mentions that the mayor is giving out 4 community service awards at the fair tonight. I love award ceremonies.&lt;/span&gt;
 
-[[Time to head out -&gt;leaving]]</tw-passagedata><tw-passagedata pid="13" name="firehouse" tags="" position="951,472" size="100,100">(if: $breakfast is false)[There&#39;s so many people at the firehouse this morning! And everything smells so good! I grab a plate of pancakes and sausage and sit down at a table with some friends who were already there. 
+&lt;span style=&quot;background-color:white&quot;&gt;[[Time to head out -&gt;leaving]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="13" name="firehouse" tags="" position="951,472" size="100,100">(if: $breakfast is false)[There&#39;s so many people at the firehouse this morning! And everything smells so good! I grab a plate of pancakes and sausage and sit down at a table with some friends who were already there. 
 
 The pancakes are so good with the fresh maple syrup my friend gave me! 
 
 During breakfast, the mayor announces that he&#39;s giving out some community service awards at the fair tonight. Excited whispers overcome the silence during the mayor&#39;s speech.
 
 [[Time to head to the park-&gt;park]]
-[[I should head to the store-&gt;store]]
+(if: $storeVisited is false)[[[I should head to the store-&gt;store]]]
 ]
 
 (if: $breakfast is true)[The pancake breakfast at the firehouse is an annual tradition at the fair. The mayor is always expected to attend so that he can kick off the fair activities. Maybe he brought the awards to breakfast to show them off and accidently left them there.
@@ -268,7 +262,6 @@ During breakfast, the mayor announces that he&#39;s giving out some community se
 In the firehouse, I see the fire chief. I tell her what I&#39;m doing and she says I could look around the firehouse for the awards. I search all over the place and even sneak a few leftover pancakes for myself, but I can&#39;t find any awards here. 
 
 (if: $awards &gt;= 1)[I have found $awards awards] (set: $firehouseVisited to true)
-
 [[Time to head to the park-&gt;park]]
 ]
 
