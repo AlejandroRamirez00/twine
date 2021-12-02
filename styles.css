@@ -35,12 +35,18 @@ tw-link, .enchantment-link
 
 a:link
 {
-    color: #2E87F9;
+    color: aliceblue;
+}
+
+a:visited
+{
+    color: azure;
 }
 
 ul
 {
     list-style: none;
+    text-align: center;
 }
 
 li
